@@ -104,6 +104,35 @@ nav {
   font-size: 1.5rem;
   color: var(--white);
 }
+/* =====================
+   Logo Image Styling
+===================== */
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between logo and text */
+}
+
+.nav__logo-img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 25px; /* rounded corners */
+}
+
+.nav__logo-img {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.nav__logo .logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 
 .nav__menu__btn {
   font-size: 1.5rem;
@@ -146,14 +175,14 @@ nav {
 }
 
 header {
-  margin-top: 5rem;
+  margin-top: 8rem;
   padding-inline: 1rem;
   position: relative;
   isolation: isolate;
   overflow: hidden;
 }
 
-header::before {
+/* header::before {
   position: absolute;
   content: "";
   height: 100%;
@@ -167,7 +196,20 @@ header::before {
   background-repeat: no-repeat;
   border-radius: 3rem;
   z-index: -1;
+} */
+
+.header__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 2rem);
+  height: 100%;
+  object-fit: cover; /* Ensures no black bars */
+  transform: translate(-50%, -50%);
+  border-radius: 3rem;
+  z-index: -1;
 }
+
 
 .header__container {
   display: grid;
@@ -181,17 +223,17 @@ header::before {
   margin-bottom: 5px;
   font-size: 1rem;
   font-weight: 600;
-  color: var(--text-dark);
+  color: white;
   text-align: center;
 }
 
 .header__content h1 {
   margin-bottom: 2rem;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   font-weight: 600;
-  color: var(--text-dark);
+  color:white;
   line-height: 5.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .header__btns {
