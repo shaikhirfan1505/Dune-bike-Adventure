@@ -81,6 +81,7 @@ body {
 
 body {
   font-family: "DM Sans", sans-serif;
+  padding-top: 140px; /* height of navbar */
 }
 
 nav {
@@ -89,6 +90,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 9;
+  
 }
 
 .nav__header {
@@ -176,7 +178,7 @@ nav {
 
 header {
   margin-top: 8rem;
-  padding-inline: 1rem;
+  padding-inline: 0.5rem;
   position: relative;
   isolation: isolate;
   overflow: hidden;
@@ -274,7 +276,7 @@ header {
 .destination__card img {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 7px 7px 25px rgba(0, 0, 0, 0.2);
 }
 
 .destination__card__details {
@@ -685,6 +687,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+    margin-bottom: 20px;
   }
 
   .nav__header {
@@ -814,3 +817,96 @@ footer {
     gap: 2rem;
   }
 }
+
+/* ===== Responsive for Mobile (Phones) ===== */
+@media (max-width: 768px) {
+  /* Transparent Navbar */
+  .nav__header {
+    background-color: white !important;
+  }
+
+  nav {
+    background: transparent !important;
+    max-height: 90%;
+  }
+
+  /* Keep dropdown menu visible */
+  .nav__links {
+    background-color: var(--primary-color);
+  }
+
+  /* Logo text and menu icon (toggle) in white */
+  .nav__logo .logo,
+  .nav__menu__btn {
+    color: var(--primary-color) !important;
+  }
+
+  /* Prevent content from hiding behind navbar */
+  body {
+    padding-top: 60px; /* adjust based on navbar height */
+  }
+}
+
+@media (min-width: 769px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 50%; /* move nav to horizontal center */
+    transform: translateX(-50%); /* adjust to actually center it */
+    width: 98%;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    max-width: 1250px; /* or whatever your container width is */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: white;
+    border-radius: 10px; /* optional if you want rounded edges */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* optional shadow */
+    border-radius: 25px;
+    margin-top: 10px;
+  }
+
+  .nav__header {
+    flex: 1;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;  /* distance from bottom */
+    left: 20px;    /* distance from left */
+    width: 50px;
+    height: 50px;
+    z-index: 9999; /* very high so it stays on top */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25D366;
+    transition: transform 0.2s;
+    touch-action: manipulation; /* improves mobile touch */
+  }
+
+  #whatsapp-button img {
+    width: 70%;
+    height: 70%;
+  }
+
+  #whatsapp-button:hover {
+    transform: scale(1.1);
+  }
+
+  /* Optional: slightly bigger on mobile for easier tap */
+  @media (max-width: 768px) {
+    #whatsapp-button {
+      width: 60px;
+      height: 60px;
+    }
+  }
