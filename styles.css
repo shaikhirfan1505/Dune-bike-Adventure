@@ -557,6 +557,7 @@ header {
 
 footer {
   background-color: var(--extra-light);
+  align-items: center;
 }
 
 .footer__container {
@@ -823,6 +824,9 @@ footer {
   /* Transparent Navbar */
   .nav__header {
     background-color: white !important;
+  }
+  .header__video{
+    object-fit: cover;
   }
 
   nav {
