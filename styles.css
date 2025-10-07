@@ -260,8 +260,8 @@ header {
   background-color: var(--primary-color);
 }
 
-.destination__container :is(.section__header, .section__description) {
-  text-align: left;
+.destination__container :is(.section__header, .description) {
+  text-align: center;
   margin-inline-start: unset;
 }
 
@@ -272,7 +272,8 @@ header {
 }
 
 .destination__card img {
-  border-radius: 1.5rem;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -282,6 +283,9 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  background-color: #cac9c9;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .destination__card__details h4 {
