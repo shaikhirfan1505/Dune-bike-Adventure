@@ -253,13 +253,13 @@ header {
   padding: 9px 13px;
   font-size: 1.5rem;
   color: var(--primary-color);
-  background-color: var(--white);
+  
   border-radius: 100%;
 }
 
 .header__btns a:hover {
   color: var(--white);
-  background-color: var(--primary-color);
+  
 }
 
 .destination__container :is(.section__header, .description) {
