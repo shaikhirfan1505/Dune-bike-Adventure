@@ -396,6 +396,7 @@ header {
   max-width: 400px;
   margin-inline: auto;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
 }
 
 .showcase__content h4 {
