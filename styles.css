@@ -433,8 +433,9 @@ header {
   padding: 2rem 1rem;
   text-align: center;
   background-color: var(--extra-light);
-  border-radius: 2rem;
+  border-radius: 25px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  
 }
 
 .banner__card h4 {
