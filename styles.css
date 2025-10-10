@@ -14,6 +14,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .section__container {
@@ -31,10 +32,12 @@
 }
 
 .section__description {
-  max-width: 600px;
+  max-width: 900px;
   margin-inline: auto;
   color: var(--text-light);
   text-align: center;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
@@ -565,6 +568,7 @@ footer {
 .footer__container {
   display: grid;
   gap: 4rem 2rem;
+  align-items: center;
 }
 
 .footer__col p {
@@ -648,6 +652,50 @@ footer {
   color: var(--text-light);
   text-align: center;
 }
+
+.footer__logo-img {
+  width: 150px;        /* Adjust size as needed */
+  border-radius: 15px; /* Rounded corners */
+  display: block;
+  margin: 0 auto 10px; /* Center horizontally and add bottom spacing */
+}
+/* Footer responsiveness for mobile */
+@media (max-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all footer columns */
+    text-align: center;  /* Center text */
+    gap: 2rem;
+  }
+
+  .footer__col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside each column */
+  }
+
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center links vertically */
+    gap: 0.5rem;
+  }
+
+  .footer__socials {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .footer__logo-img {
+    margin: 0 auto 10px; /* Center logo image */
+  }
+}
+
+
 
 @media (width > 540px) {
   .destination__grid {
