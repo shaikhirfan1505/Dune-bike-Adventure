@@ -115,6 +115,43 @@
       font-size: 1.1rem;
     }
 
+
+        /* Details heading */
+.card-details-heading {
+  font-size: 1.1rem;       /* slightly bigger */
+  font-weight: 700;         /* bold */
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+/* Dotted list */
+.card-details {
+  list-style: none;        /* remove default bullets */
+  margin: 0;
+  padding-left: 1.8rem;    /* space for custom dot */
+}
+
+.card-details li {
+  position: relative;
+  padding-left: 2rem;       /* more space for bigger dot */
+  margin-bottom: 0.6rem;
+  font-size: 1rem;           /* slightly bigger text */
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Custom dot before each li */
+.card-details li::before {
+  content: ".";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* center vertically */
+  font-weight: 900;            /* extra bold */
+  font-size: 1.3rem;           /* bigger dot */
+  color: var(--primary-color); /* dot color */
+}
+
     /* ===== SAFETY SECTION ===== */
     .safety_adult {
       background: var(--white);
@@ -341,13 +378,22 @@
             <div>
               <h4>30 minutes - INCIRCLE (250cc)</h4>
               <p>Dubai, UAE</p>
+          <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
             </div>
             <div class="destination__rating">
               <span><i class="ri-star-fill"></i></span>
               4.9
             </div>
           </div>
-          <a href="https://wa.me/971501234567" class="btn-universal btn-book">Book Now</a>
+          <a href="https://wa.me/971501674770?text=I%20want%20to%20know%20more%20about%20the%2030%20minutes%20Single%20Seat%20Quad%20Bike%20(INCIRCLE%20250cc)%20and%20am%20looking%20forward%20to%20book."
+   class="btn-universal btn-book" target="_blank">Book Now</a>
         </div>
         <div class="destination__card">
           <img src="single2.jpg" alt="Liwa Desert" />
@@ -355,13 +401,22 @@
             <div>
               <h4>60 minutes - INCIRCLE (250cc)</h4>
               <p>Dubai, UAE</p>
+                        <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
             </div>
             <div class="destination__rating">
               <span><i class="ri-star-fill"></i></span>
               4.8
             </div>
           </div>
-          <a href="https://wa.me/971501234567" class="btn-universal btn-book">Book Now</a>
+          <a href="https://wa.me/971501674770?text=I%20want%20to%20know%20more%20about%20the%2060%20minutes%20Single%20Seat%20Quad%20Bike%20(INCIRCLE%20250cc)%20and%20am%20looking%20forward%20to%20book."
+   class="btn-universal btn-book" target="_blank">Book Now</a>
         </div>
         <div class="destination__card">
           <img src="single3.jpg" alt="Sharjah Desert" />
@@ -369,13 +424,22 @@
             <div>
               <h4>120 minutes - INCIRCLE (250cc)</h4>
               <p>Dubai, UAE</p>
+                        <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
             </div>
             <div class="destination__rating">
               <span><i class="ri-star-fill"></i></span>
               4.7
             </div>
           </div>
-          <a href="https://wa.me/971501234567" class="btn-universal btn-book">Book Now</a>
+         <a href="https://wa.me/971501674770?text=I%20want%20to%20know%20more%20about%20the%20120%20minutes%20Single%20Seat%20Quad%20Bike%20(INCIRCLE%20250cc)%20and%20am%20looking%20forward%20to%20book."
+   class="btn-universal btn-book" target="_blank">Book Now</a>
         </div>
       </div>
       
@@ -403,13 +467,22 @@
         <div>
           <h4>30 minutes - Open Desert (250cc)</h4>
           <p>Dubai, UAE</p>
+                    <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
         </div>
         <div class="destination__rating">
           <span><i class="ri-star-fill"></i></span>
           4.9
         </div>
       </div>
-        <a href="https://wa.me/971501234567" class="btn-universal btn-book">Book Now</a>
+        <a href="https://wa.me/971501674770?text=I%20want%20to%20know%20more%20about%20the%2030%20minutes%20Single%20Seat%20Quad%20Bike%20(Open%20Desert%20250cc)%20and%20am%20looking%20forward%20to%20book."
+   class="btn-universal btn-book" target="_blank">Book Now</a>
     </div>
     <div class="destination__card">
       <img src="single2.jpg" alt="Liwa Desert" />
@@ -417,13 +490,22 @@
         <div>
           <h4>60 minutes - Open Desert (250cc)</h4>
           <p>Dubai, UAE</p>
+                    <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
         </div>
         <div class="destination__rating">
           <span><i class="ri-star-fill"></i></span>
           4.8
         </div>
       </div>
-        <a href="https://wa.me/971501234567" class="btn-universal btn-book">Book Now</a>
+        <a href="https://wa.me/971501674770?text=I%20want%20to%20know%20more%20about%20the%2060%20minutes%20Single%20Seat%20Quad%20Bike%20(Open%20Desert%20250cc)%20and%20am%20looking%20forward%20to%20book."
+   class="btn-universal btn-book" target="_blank">Book Now</a>
     </div>
     <div class="destination__card">
       <img src="single3.jpg" alt="Sharjah Desert" />
@@ -431,13 +513,22 @@
         <div>
           <h4>120 minutes - Open Desert (250cc)</h4>
           <p>Dubai, UAE</p>
+                    <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
         </div>
         <div class="destination__rating">
           <span><i class="ri-star-fill"></i></span>
           4.7
         </div>
       </div>
-        <a href="https://wa.me/971501234567" class="btn-universal btn-book">Book Now</a>
+        <a href="https://wa.me/971501674770?text=I%20want%20to%20know%20more%20about%20the%20120%20minutes%20Single%20Seat%20Quad%20Bike%20(Open%20Desert%20250cc)%20and%20am%20looking%20forward%20to%20book."
+   class="btn-universal btn-book" target="_blank">Book Now</a>
     </div>
   </div>
 </section>
@@ -463,13 +554,22 @@
         <div>
           <h4>30 minutes - Incircle (450cc)</h4>
           <p>Dubai, UAE</p>
+                    <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
         </div>
         <div class="destination__rating">
           <span><i class="ri-star-fill"></i></span>
           4.9
         </div>
       </div>
-        <a href="https://wa.me/971501234567" class="btn-universal btn-book">Book Now</a>
+        <a href="https://wa.me/971501674770?text=I%20want%20to%20know%20more%20about%20the%2030%20minutes%20Double%20Seater%20Quad%20Bike%20(Incircle%20450cc)%20and%20am%20looking%20forward%20to%20book."
+   class="btn-universal btn-book" target="_blank">Book Now</a>
     </div>
     <div class="destination__card">
       <img src="double2.jpg" alt="Liwa Desert" />
@@ -477,27 +577,45 @@
         <div>
           <h4>60 minutes - Incircle (450cc)</h4>
           <p>Dubai, UAE</p>
+                    <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
         </div>
         <div class="destination__rating">
           <span><i class="ri-star-fill"></i></span>
           4.8
         </div>
       </div>
-        <a href="https://wa.me/971501234567" class="btn-universal btn-book">Book Now</a>
+       <a href="https://wa.me/971501674770?text=I%20want%20to%20know%20more%20about%20the%2060%20minutes%20Double%20Seater%20Quad%20Bike%20(Incircle%20450cc)%20and%20am%20looking%20forward%20to%20book."
+   class="btn-universal btn-book" target="_blank">Book Now</a>
+
     </div>
     <div class="destination__card">
       <img src="double3.png" alt="Sharjah Desert" />
       <div class="destination__card__details">
         <div>
           <h4>120 minutes - Incircle(450cc)</h4>
-          <p>Dubai, UAE</p>
+          <p>Dubai, UAE</p>          <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
         </div>
         <div class="destination__rating">
           <span><i class="ri-star-fill"></i></span>
           4.7
         </div>
       </div>
-        <a href="https://wa.me/971501234567" class="btn-universal btn-book">Book Now</a>
+        <a href="https://wa.me/971501674770?text=I%20want%20to%20know%20more%20about%20the%20120%20minutes%20Double%20Seater%20Quad%20Bike%20(Incircle%20450cc)%20and%20am%20looking%20forward%20to%20book."
+   class="btn-universal btn-book" target="_blank">Book Now</a>
     </div>
   </div>
 </section>
@@ -528,42 +646,66 @@
           <div class="destination__card__details">
             <div>
               <h4>30 minutes - Open Desert (450cc)</h4>
-              <p>Dubai, UAE</p>
+              <p>Dubai, UAE</p>          <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
             </div>
             <div class="destination__rating">
               <span><i class="ri-star-fill"></i></span>
               4.9
             </div>
           </div>
-            <a href="https://wa.me/971501234567" class="btn-universal btn-book">Book Now</a>
+           <a href="https://wa.me/971501674770?text=I%20want%20to%20know%20more%20about%20the%2030%20minutes%20Double%20Seater%20Quad%20Bike%20(Open%20Desert%20450cc)%20and%20am%20looking%20forward%20to%20book."
+   class="btn-universal btn-book" target="_blank">Book Now</a>
         </div>
         <div class="destination__card">
           <img src="double2.jpg" alt="Liwa Desert" />
           <div class="destination__card__details">
             <div>
               <h4>60 minutes - Open Desert (450cc)</h4>
-              <p>Dubai, UAE</p>
+              <p>Dubai, UAE</p>          <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
             </div>
             <div class="destination__rating">
               <span><i class="ri-star-fill"></i></span>
               4.8
             </div>
           </div>
-            <a href="https://wa.me/971501234567" class="btn-universal btn-book">Book Now</a>
+            <a href="https://wa.me/971501674770?text=I%20want%20to%20know%20more%20about%20the%2060%20minutes%20Double%20Seater%20Quad%20Bike%20(Open%20Desert%20450cc)%20and%20am%20looking%20forward%20to%20book."
+   class="btn-universal btn-book" target="_blank">Book Now</a>
         </div>
         <div class="destination__card">
           <img src="double3.png" alt="Sharjah Desert" />
           <div class="destination__card__details">
            <div>
               <h4>120 minutes - Open Desert (450cc)</h4>
-              <p>Dubai, UAE</p>
+              <p>Dubai, UAE</p>          <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
             </div>
             <div class="destination__rating">
               <span><i class="ri-star-fill"></i></span>
               4.7
             </div>
           </div>
-            <a href="https://wa.me/971501234567" class="btn-universal btn-book">Book Now</a>
+           <a href="https://wa.me/971501674770?text=I%20want%20to%20know%20more%20about%20the%20120%20minutes%20Double%20Seater%20Quad%20Bike%20(Open%20Desert%20450cc)%20and%20am%20looking%20forward%20to%20book."
+   class="btn-universal btn-book" target="_blank">Book Now</a>
         </div>
       </div>
     </section>
