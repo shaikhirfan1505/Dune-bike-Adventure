@@ -14,12 +14,277 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Dune Bike Adventure </title>
   </head>
+  <style>
+    /* ===== GENERAL VARIABLES ===== */
+:root {
+  --primary: #f59e0b;
+  --secondary: #111827;
+  --white: #ffffff;
+  --gray: #f3f4f6;
+  --max-width: 1200px;
+  --transition: 0.3s ease-in-out;
+  --border-radius: 12px;
+  --box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  --font-sans: 'Poppins', sans-serif;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  font-family: var(--font-sans);
+  color: var(--secondary);
+  line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+p, li {
+  margin-bottom: 0.8rem;
+}
+
+section {
+  padding: 4rem 1rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ===== HERO ABOUT ===== */
+.hero_about {
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("desert-hero.jpg") center/cover no-repeat;
+  padding: 7rem 1rem;
+  text-align: center;
+  border-radius: 25px;
+  color: var(--white);
+}
+
+.hero_about h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero_about p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+/* ===== ABOUT US ===== */
+.about_us h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.about_us p {
+  max-width: 800px;
+  margin: 0.8rem auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* ===== GALLERY SLIDER ===== */
+.gallery h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.gallery .swiper {
+  padding: 2rem 0;
+}
+
+.gallery .swiper-slide {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  padding: 1rem;
+}
+
+.gallery .swiper-slide img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  margin-bottom: 0.8rem;
+}
+
+.gallery .swiper-slide p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ===== SAFETY MEASURES ===== */
+.safety_measures h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.safety_measures p {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.safety_measures ul {
+  max-width: 700px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.safety_measures ul li {
+  background: var(--gray);
+  padding: 0.8rem 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+/* ===== WHY CHOOSE US ===== */
+.why_us h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.why_us p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+}
+
+.why_us ul {
+  max-width: 700px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.why_us ul li {
+  background: var(--gray);
+  padding: 0.8rem 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 0.8rem;
+}
+
+/* ===== CUSTOMER REVIEWS ===== */
+.customer_reviews h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.customer_reviews .swiper {
+  padding: 2rem 0;
+}
+
+.client__card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.client__content p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.client__details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.client__details img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.client__details h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.client__details h5 {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* ===== FAQ ===== */
+.faq h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.faq__item {
+  background: var(--gray);
+  border-radius: var(--border-radius);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.faq__item:hover {
+  background: #e5e7eb;
+}
+
+.faq__question {
+  font-weight: 600;
+}
+
+.faq__answer {
+  margin-top: 0.5rem;
+  display: none;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ===== FAQ TOGGLE SCRIPT ===== */
+.faq__item.active .faq__answer {
+  display: block;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .hero_about h1 { font-size: 2.5rem; }
+  .about_us h2, .gallery h2, .safety_measures h2, .why_us h2, .customer_reviews h2, .faq h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero_about h1 { font-size: 2rem; }
+  .hero_about p { font-size: 1rem; }
+  .client__details { flex-direction: column; gap: 0.5rem; }
+}
+
+@media (max-width: 480px) {
+  section { padding: 2rem 1rem; }
+  .about_us p, .why_us p, .safety_measures p { font-size: 1rem; }
+}
+
+  </style>
 
   <body>
     <nav>
       <div class="nav__header">
         <div class="nav__logo">
-  <img src="https://shaikhirfan1505.github.io/Desert-Safari/demo%20buggy%201.png" alt="Quad Bike Logo" class="nav__logo-img">
+  <img src="dune bike demo logo.jpeg" alt="Quad Bike Logo" class="nav__logo-img">
   <a href="index.html" class="logo">Quad Bike</a>
 </div>
 
@@ -40,6 +305,182 @@
 </div>
     </nav>
 
+
+    <!-- ===== ABOUT PAGE BODY ===== -->
+
+<!-- HERO SECTION -->
+<section class="hero_about">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>About Dune Bike Adventure</h1>
+    <p>Discover the ultimate desert quad biking experience in Dubai with safety, thrill, and family fun.</p>
+  </div>
+</section>
+
+<!-- ABOUT US SECTION -->
+<section class="about_us" id="about">
+  <h2 data-aos="fade-up">About Us</h2>
+  <p data-aos="fade-up" data-aos-delay="100">
+    <strong>Dune Bike Adventure</strong> is Dubai's premier quad biking experience, offering exhilarating desert adventures for families, adults, and kids. Our expertly guided tours ensure thrilling rides while prioritizing your safety.
+  </p>
+  <p data-aos="fade-up" data-aos-delay="200">
+    Explore the golden dunes of Dubai with our fully equipped quad bikes, enjoy scenic desert landscapes, and capture unforgettable memories. Perfect for family outings, solo adventures, or adrenaline seekers!
+  </p>
+</section>
+
+<!-- GALLERY SLIDER -->
+<section class="gallery" id="gallery">
+  <h2 data-aos="fade-up">See Our Gallery</h2>
+  <div class="swiper gallery-swiper" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="gallery1.jpg" alt="Dune Biking in Dubai" />
+        <p>Riders enjoying the thrilling dunes of Dubai under expert guidance.</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="gallery2.jpg" alt="Family Quad Bike Adventure" />
+        <p>Families making memories on our safe and exciting quad bike tours.</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="gallery3.jpg" alt="Sunset Desert Safari" />
+        <p>Experience stunning Dubai desert sunsets while riding our quad bikes.</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="gallery4.jpg" alt="Professional Instructors" />
+        <p>Certified instructors ensure a safe and fun adventure for everyone.</p>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+<!-- SAFETY MEASURES -->
+<section class="safety_measures" id="safety">
+  <h2 data-aos="fade-up">Our Safety Measures</h2>
+  <p data-aos="fade-up" data-aos-delay="100">
+    Your safety is our top priority. Our Dubai desert quad biking tours follow strict safety protocols to ensure a worry-free adventure.
+  </p>
+  <ul data-aos="fade-up" data-aos-delay="200">
+    <li>✔️ Certified instructors with desert riding experience</li>
+    <li>✔️ High-quality helmets, gloves, and protective gear</li>
+    <li>✔️ Speed-controlled quad bikes for beginners and experts</li>
+    <li>✔️ Designated safe zones and guided trails</li>
+    <li>✔️ Pre-ride safety briefing and instructions</li>
+  </ul>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why_us" id="whyus">
+  <h2 data-aos="fade-up">Why Choose Us</h2>
+  <p data-aos="fade-up" data-aos-delay="100">
+    Dune Bike Adventure is trusted by thousands of visitors seeking safe, exciting, and unforgettable desert quad biking experiences in Dubai.
+  </p>
+  <ul data-aos="fade-up" data-aos-delay="200">
+    <li>🌟 Expert guides and certified instructors</li>
+    <li>🌟 Fully equipped and safe quad bikes</li>
+    <li>🌟 Scenic desert routes and breathtaking views</li>
+    <li>🌟 Family-friendly and solo adventure packages</li>
+    <li>🌟 Free professional photos and videos of your ride</li>
+  </ul>
+</section>
+
+<!-- CUSTOMER REVIEWS SLIDER -->
+<section class="customer_reviews" id="reviews">
+  <h2 data-aos="fade-up">Our Happy Customers</h2>
+  <div class="swiper reviews-swiper" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide client__card">
+        <div class="client__content">
+          <p>"Amazing quad biking experience! Perfect for families."</p>
+        </div>
+        <div class="client__details">
+          <img src="client1.jpg" alt="Client Photo">
+          <div>
+            <h4>John Doe</h4>
+            <h5>Dubai, UAE</h5>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide client__card">
+        <div class="client__content">
+          <p>"The guides were professional and ensured safety at all times."</p>
+        </div>
+        <div class="client__details">
+          <img src="client2.jpg" alt="Client Photo">
+          <div>
+            <h4>Sarah Lee</h4>
+            <h5>Dubai, UAE</h5>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide client__card">
+        <div class="client__content">
+          <p>"A must-do desert adventure in Dubai! Loved every moment."</p>
+        </div>
+        <div class="client__details">
+          <img src="client3.jpg" alt="Client Photo">
+          <div>
+            <h4>Ali Khan</h4>
+            <h5>Dubai, UAE</h5>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide client__card">
+        <div class="client__content">
+          <p>"Kids had a blast on their first quad biking experience."</p>
+        </div>
+        <div class="client__details">
+          <img src="client4.jpg" alt="Client Photo">
+          <div>
+            <h4>Maria Smith</h4>
+            <h5>Dubai, UAE</h5>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide client__card">
+        <div class="client__content">
+          <p>"Professional team and unforgettable desert adventure."</p>
+        </div>
+        <div class="client__details">
+          <img src="client5.jpg" alt="Client Photo">
+          <div>
+            <h4>David Brown</h4>
+            <h5>Dubai, UAE</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="faq" id="faq">
+  <h2 data-aos="fade-up">Frequently Asked Questions</h2>
+  <div class="faq__item" data-aos="fade-up">
+    <div class="faq__question">1. What age is suitable for quad biking?</div>
+    <div class="faq__answer">All ages above 6 can safely participate, with guidance from certified instructors.</div>
+  </div>
+  <div class="faq__item" data-aos="fade-up">
+    <div class="faq__question">2. Are helmets and safety gear provided?</div>
+    <div class="faq__answer">Yes, all riders are provided certified helmets, gloves, and protective gear.</div>
+  </div>
+  <div class="faq__item" data-aos="fade-up">
+    <div class="faq__question">3. Can families ride together?</div>
+    <div class="faq__answer">Yes, we offer family packages where parents and children can ride safely together.</div>
+  </div>
+  <div class="faq__item" data-aos="fade-up">
+    <div class="faq__question">4. How long does a typical ride last?</div>
+    <div class="faq__answer">Rides last from 30 minutes to 2 hours depending on your chosen package.</div>
+  </div>
+  <div class="faq__item" data-aos="fade-up">
+    <div class="faq__question">5. How do I book a tour?</div>
+    <div class="faq__answer">Bookings can be made online, via WhatsApp, or directly at our Dubai location.</div>
+  </div>
+</section>
+
+
         
 
 
@@ -51,7 +492,7 @@
     <!-- Footer Logo -->
     <div class="footer__col">
       <div class="footer__logo">
-  <img src="custom3.jpg" alt="Dune Bike Adventure Logo" class="footer__logo-img">
+  <img src="dune bike demo logo.jpeg" alt="Dune Bike Adventure Logo" class="footer__logo-img">
   <a href="#" class="logo">Dune Bike Adventure</a>
 </div>
 
@@ -123,6 +564,71 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+
+
+    <!-- ===== SWIPER JS ===== -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+  // ===== FAQ TOGGLE =====
+  const faqItems = document.querySelectorAll('.faq__item');
+  faqItems.forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+
+  // ===== SWIPER INITIALIZATION =====
+
+  // Gallery Slider
+  const gallerySwiper = new Swiper('.gallery .swiper', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  // Customer Reviews Slider
+  const reviewSwiper = new Swiper('.customer_reviews .swiper', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 1 },
+      1024: { slidesPerView: 2 },
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
   </body>
 </html>
 
