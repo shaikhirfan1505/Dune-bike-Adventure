@@ -291,6 +291,7 @@ header {
   background-color: #cac9c9;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  padding-bottom: 80px;
 }
 
 .destination__card__details h4 {
@@ -964,3 +965,55 @@ footer {
       height: 60px;
     }
   }
+
+
+
+
+
+/* Card Buttons Container - positioned inside the card */
+.destination__card {
+  position: relative; /* Needed for absolute positioning of buttons */
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--white);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Universal Button */
+.btn-universal {
+  position: absolute;
+  bottom: calc(1rem + 10px); /* 10px below the text padding */
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+/* Know More Button - bottom left */
+.btn-know {
+  left: 10px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+}
+
+.btn-know:hover {
+  background-color: var(--primary-color-dark);
+}
+
+/* Book Now Button - bottom right */
+.btn-book {
+  right: 10px;
+  background-color: var(--text-dark);
+  color: var(--white);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-book:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
+}

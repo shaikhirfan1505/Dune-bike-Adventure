@@ -78,6 +78,43 @@
       color: var(--extra-light);
     }
 
+
+    /* Details heading */
+.card-details-heading {
+  font-size: 1.1rem;       /* slightly bigger */
+  font-weight: 700;         /* bold */
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+/* Dotted list */
+.card-details {
+  list-style: none;        /* remove default bullets */
+  margin: 0;
+  padding-left: 1.8rem;    /* space for custom dot */
+}
+
+.card-details li {
+  position: relative;
+  padding-left: 2rem;       /* more space for bigger dot */
+  margin-bottom: 0.6rem;
+  font-size: 1rem;           /* slightly bigger text */
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Custom dot before each li */
+.card-details li::before {
+  content: ".";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* center vertically */
+  font-weight: 900;            /* extra bold */
+  font-size: 1.3rem;           /* bigger dot */
+  color: var(--primary-color); /* dot color */
+}
+
     .btn {
       background-color: var(--primary-color);
       padding: 1rem 2.5rem;
@@ -373,6 +410,14 @@
             <div>
               <h4>30 minutes (70 cc) </h4>
               <p>Dubai, UAE</p>
+               <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
               
             </div>
             <div class="destination__rating">
@@ -380,6 +425,8 @@
               4.9
             </div>
           </div>
+            <a href="https://wa.me/971501234567?text=I%20want%20to%20know%20more%20about%20the%20Dubai%20Desert%2030%20minutes%20(70%20cc)%20Kids%20Quad%20Bike%20and%20am%20looking%20forward%20to%20book." 
+   class="btn-universal btn-book" target="_blank">Book Now</a>
         </div>
         <div class="destination__card">
           <img src="kids2.jpg" alt="Liwa Desert" />
@@ -387,12 +434,22 @@
             <div>
               <h4>60 minutes (70cc)</h4>
               <p>Dubai, UAE</p>
+              <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
             </div>
             <div class="destination__rating">
               <span><i class="ri-star-fill"></i></span>
               4.8
             </div>
           </div>
+            <a href="https://wa.me/971501234567?text=I%20want%20to%20know%20more%20about%20the%20Dubai%20Desert%2060%20minutes%20(70%20cc)%20Kids%20Quad%20Bike%20and%20am%20looking%20forward%20to%20book." 
+   class="btn-universal btn-book" target="_blank">Book Now</a>
         </div>
         <div class="destination__card">
           <img src="kids3.jpg" alt="Sharjah Desert" />
@@ -400,12 +457,22 @@
             <div>
               <h4>120 minutes (70cc)</h4>
               <p>Dubai, UAE</p>
+              <!-- Details Section -->
+      <p><strong>Details:</strong></p>
+      <ul class="card-details">
+        <li>Expert instructor guidance</li>
+        <li>Helmet and safety gear included</li>
+        <li>Scenic desert route</li>
+        <li>Suitable for ages 5-12</li>
+      </ul>
             </div>
             <div class="destination__rating">
               <span><i class="ri-star-fill"></i></span>
               4.7
             </div>
           </div>
+            <a href="https://wa.me/971501234567?text=I%20want%20to%20know%20more%20about%20the%20Dubai%20Desert%20120%20minutes%20(70%20cc)%20Kids%20Quad%20Bike%20and%20am%20looking%20forward%20to%20book." 
+   class="btn-universal btn-book" target="_blank">Book Now</a>
         </div>
       </div>
     </section>
