@@ -14,6 +14,260 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Dune Bike adventure</title>
   </head>
+  <style>
+    /* ================= CONTACT PAGE STYLES ================= */
+
+.section {
+  padding: 80px 20px;
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+    .contact-hero {
+      position: relative;
+      padding: 7rem 1rem;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("single3.jpg") center/cover no-repeat;
+      color: var(--white);
+      text-align: center;
+      border-radius: 25px;
+      max-width: 1200px;
+      margin: 2rem auto;
+      
+    }
+
+    .contact-hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+
+    .contact-hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: var(--extra-light);
+    }
+
+
+/* CONTACT INFO */
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.info-card {
+  background: var(--extra-light);
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+}
+
+.info-card i {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.info-card h3 {
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.info-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* FORM */
+.contact-form {
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 25px;
+}
+
+.contact-form h2 {
+  color: var(--text-dark);
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.btn-submit {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 12px 35px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background: var(--primary-color-dark);
+}
+
+/* MAP */
+.contact-map h2 {
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+    /* ===== FAQ SECTION ===== */
+    .faq {
+      max-width: var(--max-width);
+      margin: 5rem auto;
+      padding: 4rem 1rem;
+      background-color: whitesmoke;
+    }
+
+    .faq h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 3rem;
+    }
+
+    .faq__item {
+      background-color:  #d4a556;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+      padding: 1.5rem 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .faq__item:hover {
+      background-color: #e9e9e9;
+    }
+
+    .faq__question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--text-dark);
+    }
+
+    .faq__answer {
+      max-height: 0;
+      overflow: hidden;
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      transition: all 0.3s ease;
+    }
+
+    .faq__item.active .faq__answer {
+      max-height: 500px;
+      margin-top: 1rem;
+    }
+
+/* SUPPORT */
+.support {
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.support h2 {
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+.emergency-number {
+  color: var(--primary-color);
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+  text-align: center;
+}
+
+.social-links h2 {
+  color: var(--text-dark);
+  margin-bottom: 25px;
+}
+
+.social-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  transition: transform 0.3s;
+}
+
+.social-btn:hover {
+  transform: translateY(-4px);
+}
+
+.whatsapp { background: #25D366; }
+.instagram { background: #E4405F; }
+.facebook { background: #1877F2; }
+
+.form-msg {
+  margin-top: 10px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+  </style>
   <body>
     <nav>
       <div class="nav__header">
@@ -40,6 +294,131 @@
     </nav>
 
         
+<main id="contact">
+
+  <!-- 1️⃣ Hero / Header Banner -->
+  <section class="contact-hero">
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Whether it’s a question, feedback, or booking inquiry — reach out and we’ll respond shortly.</p>
+    </div>
+  </section>
+
+<!-- 2️⃣ Contact Methods / Quick Info -->
+<section class="contact-info section">
+  <div class="info-container">
+
+    <!-- Call Us -->
+    <div class="info-card">
+      <a href="tel:+971501234567" style="text-decoration:none; color:inherit;">
+        <i class="fas fa-phone-alt"></i>
+        <h3>Call Us</h3>
+        <p>+971 50 123 4567</p>
+      </a>
+    </div>
+
+    <!-- Email -->
+    <div class="info-card">
+      <a href="mailto:info@dunebikeadventure.ae" style="text-decoration:none; color:inherit;">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>info@dunebikeadventure.ae</p>
+      </a>
+    </div>
+
+    <!-- Location -->
+    <div class="info-card">
+      <a href="https://www.google.com/maps/search/?api=1&query=Dubai+United+Arab+Emirates" target="_blank" style="text-decoration:none; color:inherit;">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Location</h3>
+        <p>Dubai, United Arab Emirates</p>
+      </a>
+    </div>
+
+    <!-- Working Hours -->
+    <div class="info-card">
+      <a href="https://calendar.google.com" target="_blank" style="text-decoration:none; color:inherit;">
+        <i class="fas fa-clock"></i>
+        <h3>Working Hours</h3>
+        <p>Everyday: 8:00 AM – 8:00 PM</p>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- 3️⃣ Contact Form -->
+  <section class="contact-form section">
+    <h2>Send Us a Message</h2>
+    <form id="contactForm" action="#" method="post" novalidate>
+      <div class="form-grid">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <input type="tel" id="phone" name="phone" placeholder="Phone (optional)" />
+        <input type="text" id="subject" name="subject" placeholder="Subject" />
+        <select id="tour" name="tour">
+          <option value="">Select Tour Type (optional)</option>
+          <option value="single">Single Seater Quad</option>
+          <option value="double">Double Seater Quad</option>
+          <option value="buggy">Dune Buggy Ride</option>
+          <option value="vip">VIP Package</option>
+        </select>
+        <input type="date" id="date" name="date" />
+      </div>
+      <textarea id="message" name="message" rows="5" placeholder="Your Message..." required></textarea>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+    <p class="form-msg"></p>
+  </section>
+
+  <!-- 4️⃣ Map / Location -->
+  <section class="contact-map section">
+    <h2>Our Location</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3629.913187122832!2d55.270782074577056!3d25.20484997768759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434d2b8e57a9%3A0xd4a4a13df1a8c81!2sDubai%2C%20UAE!5e0!3m2!1sen!2sae!4v1710000000000"
+      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- 5️⃣ FAQ / Common Queries -->
+  <section class="faq " id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq__item" data-aos="fade-up">
+      <div class="faq__question">7. Is there medical support available?</div>
+      <div class="faq__answer">Yes, first-aid staff are always on standby for safety assurance.</div>
+    </div>
+
+    <div class="faq__item" data-aos="fade-up">
+      <div class="faq__question">8. Can siblings ride together?</div>
+      <div class="faq__answer">Yes, we organize rides so siblings can enjoy together under supervision.</div>
+    </div>
+
+    <div class="faq__item" data-aos="fade-up">
+      <div class="faq__question">9. What happens in bad weather?</div>
+      <div class="faq__answer">In case of strong winds or rain, sessions are rescheduled free of cost.</div>
+    </div>
+  </section>
+
+  <!-- 6️⃣ Support / Emergency -->
+  <section class="support section">
+    <h2>Emergency & Support</h2>
+    <p>If you’re on a tour and need urgent help, please call our 24/7 support line:</p>
+    <h3 class="emergency-number">📞 +971 55 987 6543</h3>
+    <p>Our team is available round the clock for any assistance you need.</p>
+  </section>
+
+  <!-- 7️⃣ Social / Messaging Links -->
+  <section class="social-links section">
+    <h2>Connect With Us</h2>
+    <div class="social-container">
+      <a href="https://wa.me/971501234567" target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://instagram.com/dunebikeadventure" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://facebook.com/dunebikeadventure" target="_blank" class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+    </div>
+  </section>
+
+</main>
 
 
 
@@ -121,6 +500,36 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+      <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // FAQ Toggle
+    document.querySelectorAll(".faq__item").forEach(item => {
+      item.addEventListener("click", () => {
+        item.classList.toggle("active");
+      });
+    });
+  </script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const msg = document.querySelector(".form-msg");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    msg.textContent = "Sending message...";
+    msg.style.color = "gray";
+
+    setTimeout(() => {
+      msg.textContent = "✅ Message sent successfully! We'll get back soon.";
+      msg.style.color = "green";
+      form.reset();
+    }, 1500);
+  });
+});
+</script>
+
+
   </body>
 </html>
 
