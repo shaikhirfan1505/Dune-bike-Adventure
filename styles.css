@@ -217,6 +217,7 @@ header {
 
 
 .header__container {
+  align-items:center ;
   display: grid;
 }
 
