@@ -183,7 +183,6 @@ nav {
 .hero_video {
   position: relative;
   padding: 7rem 1rem;
-  min-height: 600px;  
   color: var(--white);
   text-align: center;
   border-radius: 25px;
@@ -210,23 +209,18 @@ nav {
 .hero_video-overlay {
   position: absolute;
   inset: 0;
-  
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
   z-index: -1;
   border-radius: 25px;
 }
 
 .hero_video-content {
-  position: absolute;
-  bottom: 7%; /* ✅ pushes text up a bit from the very bottom */
-  left: 50%;
-  transform: translateX(-50%); /* ✅ centers horizontally */
+  position: relative;
   z-index: 1;
   max-width: 800px;
-  text-align: center;
-  padding: 1rem;
-  width: 100%;
+  margin: auto;
+  padding: 2rem 1rem;
 }
-
 
 .hero_video-content h1 {
   font-size: 3rem;
@@ -263,7 +257,6 @@ nav {
   .hero_video {
     padding: 6rem 1rem;
     border-radius: 20px;
-  
   }
 
   .hero_video-content h1 {
@@ -288,6 +281,7 @@ nav {
     font-size: 0.95rem;
   }
 }
+
 
 
 .destination__container :is(.section__header, .description) {
