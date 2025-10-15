@@ -179,110 +179,91 @@ nav {
   display: none;
 }
 
-/* ===== HERO VIDEO SECTION ===== */
-.hero_video {
+header {
+  margin-top: 8rem;
+  padding-inline: 0.5rem;
   position: relative;
-  padding: 7rem 1rem;
-  color: var(--white);
-  text-align: center;
-  border-radius: 25px;
-  max-width: var(--max-width);
-  margin: 2rem auto;
-  overflow: hidden;
   isolation: isolate;
+  overflow: hidden;
 }
 
-/* Video background */
-.hero_video-bg {
+/* header::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: calc(100% - 2rem);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("https://shaikhirfan1505.github.io/Desert-Safari/demo%20buggy%201.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 3rem;
+  z-index: -1;
+} */
+
+.header__video {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: calc(100% - 2rem);
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ensures no black bars */
   transform: translate(-50%, -50%);
-  z-index: -2;
-  border-radius: 25px;
-}
-
-/* Dark overlay for better text visibility */
-.hero_video-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+  border-radius: 3rem;
   z-index: -1;
-  border-radius: 25px;
 }
 
-.hero_video-content {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem 1rem;
+
+.header__container {
+  display: grid;
 }
 
-.hero_video-content h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
-  line-height: 1.2;
+.header__content {
+  padding: 4rem 1rem;
 }
 
-.hero_video-content p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  color: var(--extra-light);
-}
-
-/* Button styling (already in your CSS, added hover effect for consistency) */
-.hero_video .btn {
-  padding: 1rem 2rem;
-  border-radius: 5rem;
+.header__content p {
+  margin-bottom: 5px;
   font-size: 1rem;
   font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.header__content h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color:white;
+  line-height: 5.5rem;
+  text-align: left;
+}
+
+.header__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header__btns .btn {
+  padding: 1rem 2rem;
+}
+
+.header__btns a {
+  padding: 9px 13px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  
+  border-radius: 100%;
+}
+
+.header__btns a:hover {
   color: var(--white);
-  background-color: var(--primary-color);
-  transition: 0.3s ease;
+  
 }
-
-.hero_video .btn:hover {
-  background-color: var(--primary-color-dark);
-}
-
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 768px) {
-  .hero_video {
-    padding: 6rem 1rem;
-    border-radius: 20px;
-  }
-
-  .hero_video-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero_video-content p {
-    font-size: 1rem;
-  }
-
-  .hero_video .btn {
-    padding: 0.8rem 1.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero_video-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero_video-content p {
-    font-size: 0.95rem;
-  }
-}
-
-
 
 .destination__container :is(.section__header, .description) {
   text-align: center;
