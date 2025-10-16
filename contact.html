@@ -27,11 +27,11 @@
       position: relative;
       padding: 7rem 1rem;
       background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-        url("single3.jpg") center/cover no-repeat;
+        url("single2.jpg") center/cover no-repeat;
       color: var(--white);
       text-align: center;
       border-radius: 25px;
-      max-width: 1200px;
+      max-width: var(--max-width);
       margin: 2rem auto;
       
     }
@@ -69,6 +69,7 @@
 
 .info-card:hover {
   transform: translateY(-6px);
+  background-color: var(--primary-color);
 }
 
 .info-card i {
@@ -381,30 +382,131 @@
     </iframe>
   </section>
 
-  <!-- 5️⃣ FAQ / Common Queries -->
-  <section class="faq " id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq__item" data-aos="fade-up">
-      <div class="faq__question">7. Is there medical support available?</div>
-      <div class="faq__answer">Yes, first-aid staff are always on standby for safety assurance.</div>
-    </div>
+ <!-- 5️⃣ FAQ Section (UPDATED) -->
+    <section class="faq section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq__item">
+          <div class="faq__question">
+           1. Do I need a driving license to ride a quad bike in Dubai?
+          </div>
+          <div class="faq__answer">
+            No, you don’t need a driving license. Our quad bikes are beginner
+            friendly, and every ride starts with a full safety briefing and
+            test-drive under guide supervision.
+          </div>
+        </div>
 
-    <div class="faq__item" data-aos="fade-up">
-      <div class="faq__question">8. Can siblings ride together?</div>
-      <div class="faq__answer">Yes, we organize rides so siblings can enjoy together under supervision.</div>
-    </div>
+        <div class="faq__item">
+          <div class="faq__question">
+           2. Can I book a desert safari or dune buggy ride online?
+          </div>
+          <div class="faq__answer">
+            Yes, you can easily book online or through WhatsApp. We also offer
+            same-day bookings for morning and evening desert safari adventures.
+          </div>
+        </div>
 
-    <div class="faq__item" data-aos="fade-up">
-      <div class="faq__question">9. What happens in bad weather?</div>
-      <div class="faq__answer">In case of strong winds or rain, sessions are rescheduled free of cost.</div>
-    </div>
-  </section>
+        <div class="faq__item">
+          <div class="faq__question">
+           3. What should I wear for the quad biking experience?
+          </div>
+          <div class="faq__answer">
+            Wear comfortable outdoor clothing, closed shoes, and sunglasses.
+            Helmets, gloves, and safety gear are provided by our team.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+           4. Are transfers included in the desert adventure packages?
+          </div>
+          <div class="faq__answer">
+            Yes, pick-up and drop-off from your Dubai hotel or residence are
+            available upon request in air-conditioned 4x4 vehicles.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+           5. Can children or families join the adventure?
+          </div>
+          <div class="faq__answer">
+            Absolutely. We have family-friendly packages, including smaller quad
+            bikes for kids and double-seater dune buggies for parents and
+            children.
+          </div>
+        </div>
+
+        <!-- Added 5 More FAQ Items Below -->
+
+        <div class="faq__item">
+          <div class="faq__question">
+            6. What’s the best time to go for a desert adventure in Dubai?
+          </div>
+          <div class="faq__answer">
+            The best time for quad biking or a dune buggy ride is during the
+            early morning or sunset sessions when temperatures are cooler and
+            lighting is perfect for photos.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+           7. Is quad biking safe for beginners?
+          </div>
+          <div class="faq__answer">
+            Yes, our rides are completely safe. Each guest gets safety
+            instructions and a guided test ride before entering the desert area.
+            Our bikes are regularly maintained and inspected.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+           8. Do you offer private or group bookings for events?
+          </div>
+          <div class="faq__answer">
+            Yes, we organize private group rides, corporate events, and team
+            outings with custom dune adventure packages and refreshments in the
+            desert camp.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+           9. What’s included in the Dune Bike Adventure package?
+          </div>
+          <div class="faq__answer">
+            Depending on your selection, packages include quad biking or dune
+            buggy rides, camel riding, sandboarding, refreshments, and optional
+            BBQ dinner or entertainment at the desert camp.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+            10. How can I contact Dune Bike Adventure for quick booking?
+          </div>
+          <div class="faq__answer">
+            You can call or WhatsApp us at
+            <a href="https://wa.me/971501674770" target="_blank"
+              >+971 50 167 4770</a
+            >
+            for instant booking confirmation and available slots. We respond
+            within minutes.
+          </div>
+        </div>
+      </div>
+    </section>
 
   <!-- 6️⃣ Support / Emergency -->
   <section class="support section">
     <h2>Emergency & Support</h2>
     <p>If you’re on a tour and need urgent help, please call our 24/7 support line:</p>
-    <h3 class="emergency-number">📞 +971 55 987 6543</h3>
+     <a href="tel:+971501674770">
+      <h3 class="emergency-number">📞 +971 50 167 4770</h3>
+    </a>
     <p>Our team is available round the clock for any assistance you need.</p>
   </section>
 
@@ -501,33 +603,41 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
       <script>
-    AOS.init({ duration: 1000, once: true });
+  // ✅ FIXED FAQ TOGGLE SCRIPT
+  document.addEventListener("DOMContentLoaded", function() {
+    const faqs = document.querySelectorAll(".faq__item");
 
-    // FAQ Toggle
-    document.querySelectorAll(".faq__item").forEach(item => {
-      item.addEventListener("click", () => {
-        item.classList.toggle("active");
+    faqs.forEach(faq => {
+      const question = faq.querySelector(".faq__question");
+
+      // Toggle .active class instead of display:none (matches your CSS)
+      question.addEventListener("click", () => {
+        faq.classList.toggle("active");
       });
     });
-  </script>
-    <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("contactForm");
-  const msg = document.querySelector(".form-msg");
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    msg.textContent = "Sending message...";
-    msg.style.color = "gray";
-
-    setTimeout(() => {
-      msg.textContent = "✅ Message sent successfully! We'll get back soon.";
-      msg.style.color = "green";
-      form.reset();
-    }, 1500);
   });
-});
 </script>
+
+<script>
+  // ✅ CONTACT FORM FEEDBACK SCRIPT (unchanged)
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contactForm");
+    const msg = document.querySelector(".form-msg");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      msg.textContent = "Sending message...";
+      msg.style.color = "gray";
+
+      setTimeout(() => {
+        msg.textContent = "✅ Message sent successfully! We'll get back soon.";
+        msg.style.color = "green";
+        form.reset();
+      }, 1500);
+    });
+  });
+</script>
+
 
 
   </body>
