@@ -13,6 +13,11 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <title>Dune Bike Adventure</title>
+
+    <title>Kids Quad Bike Dubai | Safe & Fun Desert Adventure for Kids</title>
+<meta name="description" content="Let your little ones enjoy a safe and exciting Kids Quad Biking adventure in Dubai. Supervised rides with helmets, safety gear, and trained instructors. Book today!">
+<meta name="keywords" content="kids quad bike dubai, quad bike for children, kids desert bike ride, 70cc quad bike, kids desert safari, family desert adventure, dune bike for kids">
+
   </head>
   <!-- ===== CSS VARIABLES ===== -->
   <style>
@@ -240,6 +245,143 @@
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
+
+
+
+    /* ===== WHAT PARENTS SAY SECTION ===== */
+.parents__reviews {
+  background: var(--extra-light);
+  border-radius: 25px;
+  padding: 5rem 1.5rem;
+  margin: 3rem auto;
+  max-width: var(--max-width);
+  text-align: center;
+}
+
+.parents__reviews h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--primary-color-dark);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.parents__reviews .section__description {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+}
+
+/* ===== GRID ===== */
+.reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* ===== CARD ===== */
+.review__card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 260px;
+}
+
+.review__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== TEXT ===== */
+.review__text {
+  font-style: italic;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* ===== AUTHOR ===== */
+.review__author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.review__author img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
+}
+
+.review__author h4 {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 0.2rem;
+}
+
+.review__author span {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+@media (max-width: 1024px) {
+  .parents__reviews h2 {
+    font-size: 2rem;
+  }
+  .review__card {
+    padding: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .parents__reviews {
+    padding: 4rem 1rem;
+  }
+  .parents__reviews h2 {
+    font-size: 1.9rem;
+  }
+  .parents__reviews .section__description {
+    font-size: 1rem;
+  }
+  .review__text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .parents__reviews {
+    border-radius: 0;
+    padding: 3rem 1rem;
+  }
+  .parents__reviews h2 {
+    font-size: 1.7rem;
+  }
+  .review__card {
+    padding: 1.5rem;
+  }
+  .review__author img {
+    width: 48px;
+    height: 48px;
+  }
+  .review__text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
 
     /* ===== FAQ SECTION ===== */
     .faq {
@@ -515,6 +657,57 @@
     </ul>
   </section>
 
+
+  <!-- ===== WHAT PARENTS SAY ===== -->
+<section class="parents__reviews" id="reviews">
+  <h2 data-aos="fade-up">What Parents Say</h2>
+  <p class="section__description" data-aos="fade-up" data-aos-delay="100">
+    Hear from families who’ve trusted us for their kids’ first desert adventure.
+  </p>
+
+  <div class="reviews__grid">
+    <div class="review__card" data-aos="fade-up" data-aos-delay="100">
+      <p class="review__text">
+        “My 8-year-old had the best time! The instructors were patient and made sure the ride was safe and fun.”
+      </p>
+      <div class="review__author">
+        <img src="sample ceo.png" alt="Parent review photo">
+        <div>
+          <h4>Sarah Ahmed</h4>
+          <span>Dubai, UAE</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="review__card" data-aos="fade-up" data-aos-delay="200">
+      <p class="review__text">
+        “Very professional and well organized. The safety measures gave us peace of mind while our son enjoyed the ride.”
+      </p>
+      <div class="review__author">
+        <img src="sample ceo.png" alt="Parent review photo">
+        <div>
+          <h4>Mohammed Khan</h4>
+          <span>Abu Dhabi, UAE</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="review__card" data-aos="fade-up" data-aos-delay="300">
+      <p class="review__text">
+        “The staff were amazing with the kids! My daughter didn’t want to leave. We’ll definitely come again.”
+      </p>
+      <div class="review__author">
+        <img src="sample ceo.png" alt="Parent review photo">
+        <div>
+          <h4>Lisa Fernandes</h4>
+          <span>Sharjah, UAE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
   <!-- ===== FAQ SECTION ===== -->
   <section class="faq" id="faq">
     <h2 data-aos="fade-up">Frequently Asked Questions</h2>
@@ -667,5 +860,25 @@
       });
     });
   </script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "Dune Bike Adventure",
+  "description": "Kids Quad Bike rides in Dubai desert. Safe, supervised fun for ages 5-12.",
+  "image": "https://shaikhirfan1505.github.io/Dune-bike-Adventure/kids1.jpg",
+  "telephone": "+971501674770",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dubai",
+    "addressCountry": "UAE"
+  },
+  "openingHours": "Mo-Su 08:00-20:00",
+  "priceRange": "AED 90 - AED 230"
+}
+</script>
+
 </body>
 </html>
