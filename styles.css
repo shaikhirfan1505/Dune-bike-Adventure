@@ -953,9 +953,6 @@ footer {
   }
 
 
-
-
-
 /* Card Buttons Container - positioned inside the card */
 .destination__card {
   position: relative; /* Needed for absolute positioning of buttons */
