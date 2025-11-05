@@ -131,8 +131,8 @@ nav {
 }
 
 .nav__logo .logo {
-  font-size: 1.6rem;
-  font-weight: 800;
+  font-size: 1.3rem;
+  font-weight: 1000;
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -155,7 +155,7 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.6rem;
   background-color: var(--primary-color);
   transition: transform 0.5s;
   z-index: -1;
