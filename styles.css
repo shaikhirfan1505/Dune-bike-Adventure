@@ -179,6 +179,25 @@ nav {
   display: none;
 }
 
+.nav__links a {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav__links a.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px; /* adjust if needed */
+  transform: translateX(-50%);
+  width: 80%;  /* adjust underline length */
+  height: 4px;
+  background-color: #b7942c; /* underline color */
+  border-radius: 2px;
+}
+
+
+
 header {
   margin-top: 8rem;
   padding-inline: 0.5rem;
