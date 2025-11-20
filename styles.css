@@ -360,6 +360,7 @@ header {
   columns: var(--text-light);
 }
 
+
 .destination__rating {
   padding: 5px 10px;
   font-size: 0.9rem;
